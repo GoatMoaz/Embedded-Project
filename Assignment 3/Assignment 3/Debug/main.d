@@ -1,0 +1,49 @@
+main.d main.o: .././main.c \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdint.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h \
+ P:\7.0\Packs\atmel\ATmega_DFP\1.7.374\include/avr/iom32.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\portpins.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\common.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
+ .././bit_math.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdint.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h:
+
+P:\7.0\Packs\atmel\ATmega_DFP\1.7.374\include/avr/iom32.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\portpins.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\common.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h:
+
+.././bit_math.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
+
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
