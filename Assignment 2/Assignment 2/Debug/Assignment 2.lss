@@ -13,19 +13,19 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
   4 .debug_aranges 00000058  00000000  00000000  00000370  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   000007be  00000000  00000000  000003c8  2**0
+  5 .debug_info   00000794  00000000  00000000  000003c8  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 00000669  00000000  00000000  00000b86  2**0
+  6 .debug_abbrev 00000669  00000000  00000000  00000b5c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   00000352  00000000  00000000  000011ef  2**0
+  7 .debug_line   00000352  00000000  00000000  000011c5  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  00000088  00000000  00000000  00001544  2**2
+  8 .debug_frame  00000088  00000000  00000000  00001518  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    00000369  00000000  00000000  000015cc  2**0
+  9 .debug_str    00000369  00000000  00000000  000015a0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00000144  00000000  00000000  00001935  2**0
+ 10 .debug_loc    00000144  00000000  00000000  00001909  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 00000050  00000000  00000000  00001a79  2**0
+ 11 .debug_ranges 00000050  00000000  00000000  00001a4d  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -141,10 +141,10 @@ void keypad_init(void){
 
 }
 void seven_segment_init(){
-	DDRA |= 0b01111111;
-  cc:	8a b3       	in	r24, 0x1a	; 26
+	DDRB |= 0b01111111;
+  cc:	87 b3       	in	r24, 0x17	; 23
   ce:	8f 67       	ori	r24, 0x7F	; 127
-  d0:	8a bb       	out	0x1a, r24	; 26
+  d0:	87 bb       	out	0x17, r24	; 23
   d2:	08 95       	ret
 
 000000d4 <display_on_seven_seg>:
@@ -175,7 +175,7 @@ void display_on_seven_seg(int num){
 		 0b01111111,//8
 		 0b01101111 //9
 		 };
-	PORTA=arr[num%10];
+	PORTB=arr[num%10];
   fa:	6a e0       	ldi	r22, 0x0A	; 10
   fc:	70 e0       	ldi	r23, 0x00	; 0
   fe:	0e 94 0c 01 	call	0x218	; 0x218 <__divmodhi4>
@@ -189,7 +189,7 @@ void display_on_seven_seg(int num){
  110:	e8 0f       	add	r30, r24
  112:	f9 1f       	adc	r31, r25
  114:	80 81       	ld	r24, Z
- 116:	8b bb       	out	0x1b, r24	; 27
+ 116:	88 bb       	out	0x18, r24	; 24
 }
  118:	64 96       	adiw	r28, 0x14	; 20
  11a:	0f b6       	in	r0, 0x3f	; 63
@@ -209,7 +209,7 @@ unsigned char keypad_get_value(void){
  12c:	70 e0       	ldi	r23, 0x00	; 0
 		 0b01101111 //9
 		 };
-	PORTA=arr[num%10];
+	PORTB=arr[num%10];
 }
 unsigned char keypad_get_value(void){
 	unsigned char ans=0xff;
@@ -340,7 +340,7 @@ unsigned char keypad_get_value(void){
  1ec:	0c f0       	brlt	.+2      	; 0x1f0 <keypad_get_value+0xc6>
  1ee:	b3 cf       	rjmp	.-154    	; 0x156 <keypad_get_value+0x2c>
 		 };
-	PORTA=arr[num%10];
+	PORTB=arr[num%10];
 }
 unsigned char keypad_get_value(void){
 	unsigned char ans=0xff;

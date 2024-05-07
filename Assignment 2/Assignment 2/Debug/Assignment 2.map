@@ -438,11 +438,11 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0x7be
+.debug_info     0x00000000      0x794
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 P:/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_info    0x000004e6      0x1e1 keypad.o
- .debug_info    0x000006c7       0xf7 main.o
+ .debug_info    0x000006c7       0xcd main.o
 
 .debug_abbrev   0x00000000      0x669
  *(.debug_abbrev)
@@ -467,7 +467,7 @@ END GROUP
  .debug_str     0x00000196      0x1c2 keypad.o
                                 0x1f6 (size before relaxing)
  .debug_str     0x00000358       0x11 main.o
-                                0x1ab (size before relaxing)
+                                0x152 (size before relaxing)
 
 .debug_loc      0x00000000      0x144
  *(.debug_loc)

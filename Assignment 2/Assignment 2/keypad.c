@@ -1,5 +1,5 @@
 #include "keypad.h"
-
+#include <util/delay.h>
 unsigned char arr[4][4]={
 	{'7','8','9','/'},
 	{'4','5','6','*'},
@@ -25,7 +25,7 @@ void keypad_init(void){
 
 }
 void seven_segment_init(){
-	DDRA |= 0b01111111;
+	DDRB |= 0b01111111;
 }
 void display_on_seven_seg(int num){
 	int arr[10]={
@@ -40,7 +40,7 @@ void display_on_seven_seg(int num){
 		 0b01111111,//8
 		 0b01101111 //9
 		 };
-	PORTA=arr[num%10];
+	PORTB=arr[num%10];
 }
 unsigned char keypad_get_value(void){
 	unsigned char ans=0xff;
