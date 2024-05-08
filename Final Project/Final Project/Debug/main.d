@@ -13,8 +13,9 @@ main.d main.o: .././main.c \
  p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
+ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
  .././bit_math.h .././atmga32.h .././keypad.h .././Seven_Segment.h \
- .././LCD.h
+ .././LCD.h .././LEDs.h
 
 p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -44,6 +45,8 @@ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
 
 p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
 
+p:\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h:
+
 .././bit_math.h:
 
 .././atmga32.h:
@@ -53,3 +56,5 @@ p:\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
 .././Seven_Segment.h:
 
 .././LCD.h:
+
+.././LEDs.h:

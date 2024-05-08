@@ -19,7 +19,6 @@ void LCD_init(void){
 	LCD_command(0x0e); // Display on, Cursor blinking
 	LCD_command(0x01); // Clear the display screen
 	LCD_command(0x80); // Force the cursor to the beginning of the 1st line
-	
 }
 
 // -------------- Write a command to the LCD --------------

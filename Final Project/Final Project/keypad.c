@@ -55,5 +55,8 @@ unsigned char keypad_get_value(void){
 			}	
 		}
 	}
+	// Make sure that the user can't enter any characters but numbers , = and +
+	if((ans != '=') && (ans != '+') && ((ans>'9') || (ans<'0'))) 
+		return 0xff;
 	return ans;
 }
